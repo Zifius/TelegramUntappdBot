@@ -1,0 +1,5 @@
+{
+    "require": {
+        "gnosis/untappd": "0.1.*"
+    }
+}
