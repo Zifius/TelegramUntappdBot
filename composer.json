@@ -1,6 +1,6 @@
 {
-    "require": {
-        "gnosis/untappd": "0.1.*",
-        "telegram-bot/api": "~1.2"
-    }
+  "require": {
+    "guzzlehttp/guzzle": "~6.2",
+    "telegram-bot/api": "~2.2"
+  }
 }
