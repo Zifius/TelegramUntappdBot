@@ -3,11 +3,12 @@
 namespace Untappd\Bot;
 
 require_once 'vendor/autoload.php';
-require_once 'config/credentials.php';
-
-global $config;
 
 use GuzzleHttp\Client;
+use Symfony\Component\Dotenv\Dotenv;
+
+$dotEnv = new Dotenv();
+$dotEnv->load(__DIR__.'/.env');
 
 // Create HTTP Client
 $client = new Client(['base_uri' => Api::ENDPOINT]);
@@ -19,8 +20,8 @@ try {
         Slugs\Search::BEER,
         [
             'query' => [
-                'client_id' => $config['untappdClientId'],
-                'client_secret' => $config['untappdClientSecret'],
+                'client_id' => getenv('CLIENT_ID'),
+                'client_secret' => getenv('CLIENT_SECRET'),
                 'q' => 'Augustiner'
             ]
         ]
