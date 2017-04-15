@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "4b3218e1a0cc7ff9999583f9807f08ab",
+    "content-hash": "cc58ee17ff60b1e3edd5b3dc4deb85e5",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -235,6 +235,63 @@
             "time": "2016-08-06T14:39:51+00:00"
         },
         {
+            "name": "symfony/dotenv",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/dotenv.git",
+                "reference": "6f054246133eabcc02accff4378ef8721bc0ca8f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/dotenv/zipball/6f054246133eabcc02accff4378ef8721bc0ca8f",
+                "reference": "6f054246133eabcc02accff4378ef8721bc0ca8f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "symfony/process": "^3.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Dotenv\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Registers environment variables from a .env file",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "dotenv",
+                "env",
+                "environment"
+            ],
+            "time": "2017-04-12 14:15:58"
+        },
+        {
             "name": "telegram-bot/api",
             "version": "2.2.9",
             "source": {
@@ -292,8 +349,10 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "symfony/dotenv": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
