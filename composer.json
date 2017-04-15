@@ -2,5 +2,10 @@
   "require": {
     "guzzlehttp/guzzle": "~6.2",
     "telegram-bot/api": "~2.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Untappd\\": "src/"
+    }
   }
 }

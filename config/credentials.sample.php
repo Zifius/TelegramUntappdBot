@@ -1,7 +1,7 @@
 <?php
 
 $config = [
-	'telegramToken' => '',
-	'untappdClientId => '',
-	'untappdClientSecret => '',
+    'telegramToken' => '',
+    'untappdClientId' => '',
+    'untappdClientSecret' => '',
 ];
