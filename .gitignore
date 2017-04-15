@@ -1,3 +1,5 @@
-/vendor
-credentials.php
 .DS_Store
+.idea/
+*.pyc
+__pycache__/
+.env
